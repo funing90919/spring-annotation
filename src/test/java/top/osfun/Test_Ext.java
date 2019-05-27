@@ -19,6 +19,12 @@ public class Test_Ext {
 
         });
 
+        String[] beanDefinitionNames = context.getBeanDefinitionNames();
+        System.out.println("============================");
+        for (String name : beanDefinitionNames) {
+            System.out.println(name);
+        }
+        System.out.println("============================");
 
         context.close();
     }

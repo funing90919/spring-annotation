@@ -38,14 +38,13 @@ import top.osfun.bean.Color;
  *
  *
  *
- * Created by Jacky on 2019-05-13 18:08.
  */
 @Configuration
 @ComponentScan({"top.osfun.ext"})
 public class ExtConfig {
 
     @Bean
-    public Color color() {
+    public Color color111() {
         return new Color();
     }
 

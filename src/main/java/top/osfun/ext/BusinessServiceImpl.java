@@ -8,10 +8,15 @@ import org.springframework.stereotype.Service;
  * Created by Jacky on 2019-05-13 21:50.
  */
 @Service
-public class BusinessServiceImpl {
+public class BusinessServiceImpl implements BusinessService {
 
     @EventListener(classes = {ApplicationEvent.class})
     public void listner(ApplicationEvent event) {
         System.out.println("BusinessService收到事件" + event);
+    }
+
+    @Override
+    public void insertUser() {
+
     }
 }
